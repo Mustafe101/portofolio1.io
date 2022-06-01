@@ -1,0 +1,664 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/*/////////////////////////////////////////////////////////////////////////
+//////////////////////////////N A V I G AT I O N//////////////////////////////////
+////////////////////////////////////////////////////////////////////////*/
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    float: left;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+h1{
+    font-size: 5vh;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: 'Smooch', cursive; 
+    color: white;
+    transition: 1s;
+}
+
+h1:hover{
+    color: red;
+    transition-duration: 1s 1s;
+    
+}
+
+
+@media all and (max-width:1024px) {
+    h1{
+        font-size: 60px;
+        height: 10%;
+    }
+    header{
+        justify-content: center;
+    }
+}
+
+@media all and (max-width:768px) {
+    h1{
+        color: red;
+        margin: 0;
+    }
+    }
+
+
+.menu{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+@media all and (max-width:1024px){
+    .menu{
+        display: none;
+    }
+}
+
+
+ul{
+    float: left;
+}
+
+.menu ol ul a{
+    text-decoration: none;
+    width: 7vw;
+    display: block;
+    text-align: center;
+    font-family: 'Akshar', sans-serif;  
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    justify-content: flex-end;
+    transition: 1s;
+}
+
+.menu ol ul a:hover{
+    color: red; 
+    transition-duration: 1s, 1s;
+    letter-spacing: 5px;
+}
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////H O M E/////////////////////////////////////
+////////////////////////////////////////////////////////////////////////*/
+
+
+
+.home{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    background-color: beige;
+    align-items: center;
+    justify-content: center;
+}
+
+.home{
+    background-image: url(img/wp1904065-developer-wallpapers.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 900px;
+}
+
+
+.porto{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    font-size: 10vh;
+    text-align: center;
+    margin-top: -300px;
+    font-family: 'Akshar', sans-serif;  
+    color: white;
+    letter-spacing: 5px;
+    transition: 1s;
+}
+
+.porto:hover{
+    font-size: 11vh;
+    color: red; 
+    transition-duration: 1s 1s;
+    letter-spacing: 30px;
+}
+
+
+@media all and (max-width:1024px){
+    .porto{
+        font-size: 7vh;
+        margin-top: -200px;
+    }
+}
+
+@media all and (max-width:768px){
+    .porto{
+        font-size: 5vh;
+        margin-top: -100px;
+    }
+}
+
+.job{
+    position: absolute;
+    display: flex;
+    align-self: center;
+    font-size: 8vh;
+    font-family: 'Akshar', sans-serif;  
+    color: white;
+    letter-spacing: 5px;
+    transition: 1s;
+}
+
+.job:hover{
+    font-size: 9vh;
+    color: red; 
+    transition-duration: 1s 1s;
+    letter-spacing: 5px;
+    text-align: center  ;
+}
+
+
+@media all and (max-width:1100px){
+    .job{
+        font-size: 5vh;
+    }
+}
+@media all and (max-width:768px){
+    .job{
+        margin-top: 0px;
+        font-size: 3vh; 
+        text-align: center; 
+        
+    }
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////
+//////////////////////////////I N T R O D U C T I O N/////////////////////////////////////
+////////////////////////////////////////////////////////////////////////*/
+
+
+
+.me{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: fit-content;
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media all and (max-width:1024px){
+    .me{
+        flex-direction: column;
+    }
+}
+
+.box1{
+    margin-left: 60px;
+}
+
+.box1 img{
+    width: 30vh;
+    height: 30vh;
+    border-radius: 5%;
+    margin: 20px;
+    transition: 1s;
+}
+
+.box1 img:hover{
+    width: 33vh;
+    height: 33vh;
+    background: red;
+    border-radius: 10%;
+    transition: 1s;
+    transition-duration: 1s;
+}
+
+.box1 p{
+    color: #fff;
+    margin: 0%;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Koulen', cursive;
+    transition: 0.5s;
+}
+
+
+.box1 p:hover{
+    background-color: red;
+    font: 15px;
+    border-radius: 10px;
+    transition-duration: 0.5s 0.5s;
+}
+
+
+.intro{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60vh;
+    height: 20vh;
+    background-color:black;
+    margin: 20px;
+    margin-left: 50px;
+    border-radius: 10%;
+    transition: 1s;
+}
+
+.intro:hover{
+    background-color: red;
+    width: 65vh;
+    height: fit-content;
+    transition: 2;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+@media all and (max-width:1024px){
+    .intro{
+        width: 40vh;
+        height: 30vh;
+        border-radius: 10%;
+    }
+}
+
+
+
+.name{
+    align-self: center;
+    color: #fff;
+    font-family: 'Koulen', cursive;
+    letter-spacing: 5px;
+}
+
+@media all and (max-width:768px) {
+    h2{
+        font-size: 30px;
+        color: red;
+    }
+    }
+
+
+    
+.intro p{
+    text-align : center;
+    font-size: 20px;
+    flex-wrap: wrap;
+    color: #fff;
+    margin: 5px;
+}
+
+@media all and (max-width:1024px){
+    .intro p{
+        text-align: center;
+    }
+}
+
+/*/////////////////////////////////////////////////////////////////////////
+//////////////////////////////W O R K/////////////////////////////////////
+////////////////////////////////////////////////////////////////////////*/
+
+
+.work {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;    
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.webs{
+    margin: 10px;
+    position: relative;
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+   
+}
+
+
+h4{
+    text-align: center;
+    align-items: center;
+    font-size: 80px;
+    margin: 10px;
+    font-family: 'Koulen', cursive;
+    color: white;
+    letter-spacing: 10px;
+    transition: 2s;
+}
+
+h4:hover{
+    font-size: 83px;
+    color: red; 
+    transition-duration: 1s 1s;
+    letter-spacing: 30px;
+}
+@media all and (max-width:1250px) {
+    h4{
+        font-size: 40px;
+        color: red;
+    }
+}
+
+
+.kama{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: fit-content;
+    flex-direction: row;
+    margin: 10px;
+}
+
+
+@media all and (max-width:1250px) {
+    .kama{
+        width: 100vh;
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+    }
+    .kama img{
+        width: 100%;
+    }
+}
+
+@media all and (max-width:768px) {
+    .kama img{
+        width: 30%;
+    }
+}
+
+
+
+.kama img{
+    display: flex;
+    margin: 20px;
+    border-radius: 5%;
+    width: 70vh;
+    transition: 1s;
+}
+
+.kama img:hover{
+    width: 75vh;
+    border-radius: 0;
+    transition-duration: 1s 1s;
+}
+
+.kama a{
+    width: 100%;
+    justify-content: center;
+}
+
+@media all and (max-width:1250px) {
+    .kama a{
+        width: 75%;
+     
+    }
+}
+
+
+.topleft{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+}
+
+
+.zanzi{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: fit-content;
+    flex-direction: row;
+    margin: 10px;
+}
+
+
+@media all and (max-width:1250px) {
+    .zanzi{
+        display: flex;
+        width: 100vh;
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+    }
+    .zanzi img{
+        width: 100%;
+    }
+}
+
+.zanzi img{
+    display: flex;
+    position: relative;
+    margin: 20px;
+    border-radius: 5%;
+    width: 70vh;
+    transition: 1s;
+}
+
+.zanzi img:hover{
+    width: 75vh;
+    border-radius: 0;
+    transition-duration: 1s 1s;
+    background-color: red;
+}
+
+.zanzi a{
+    width: 100%;
+    justify-content: center;
+}
+
+@media all and (max-width:1250px) {
+    .zanzi a{
+        width: 75%;
+    }
+}
+
+
+.topright{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////
+//////////////////////////////T E C H N O/////////////////////////////////////
+////////////////////////////////////////////////////////////////////////*/
+
+
+h5{
+    text-align: center;
+    align-items: center;
+    font-size: 80px;
+    margin: 10px;
+    margin-bottom: 40px;
+    font-family: 'Koulen', cursive;
+    color: white;
+    letter-spacing: 10px;
+    transition: 2s;
+}
+
+h5:hover{
+    font-size: 83px;
+    color: red; 
+    transition-duration: 1s 1s;
+    letter-spacing: 30px;
+}
+
+@media all and (max-width:768px) {
+    h5{
+        font-size: 30px;
+        color: red;
+    }
+    }
+
+
+
+.equipment{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    flex-direction: row;
+    background-color: beige;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.equipment{
+    background-image: url(img/6702935.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+
+.equipment svg{
+    width: 20vh;
+    height: 20vh;
+    fill: #fff;
+    transition: 1s;
+}
+
+.equipment svg:hover{
+    width: 25vh;
+    height: 25vh;
+    fill: red;
+    transition-duration: 1s 1s;
+}
+
+@media all and (max-width:1250px) {
+    .equipment{
+        height: 80vh;
+    }
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////
+//////////////////////////////C O N T A C T S/////////////////////////////////////
+////////////////////////////////////////////////////////////////////////*/
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+}
+
+h6{
+    color: #fff;
+    align-self: center;
+    font-size: 50px;
+    font-family: 'Koulen', cursive;
+    letter-spacing: 10px;
+    transition: 1.3s;
+    margin: 20px;
+}
+h6:hover{
+    color:red;
+    font-size: 55px;
+    letter-spacing: 20px;
+    transition-duration: 1s 1s;
+}
+
+.con{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: #fff;
+}
+
+.con p{
+    font-size: 25px;
+}
+
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icons svg{
+    fill: #fff;
+    width: 10vh;
+    margin: 20px;
+    transition: 1s;
+}
+
+.icons svg:hover{
+    fill: red;
+    width: 12vh;
+    transition-duration: 1s 1s;
+}
+
+
+.con p a{
+    font-family: 'Koulen', cursive;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
